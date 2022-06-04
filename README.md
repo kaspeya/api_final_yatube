@@ -25,12 +25,29 @@ python3 manage.py migrate
 python3 manage.py runserver
 ```
 # Примеры запросов:
-| Эндпоинты              | Что делает            | 
-| -------------          | -------------         |
-| 'GET'  /api/v1/posts/  | Получить список всех публикаций.
-При указании параметров limit и offset выдача должна работать с пагинацией.  |
-| 'POST' /api/v1/posts/  | Создание публикации  |
-| 'GET'  /api/v1/groups/ | Получить список всех групп.|
+| CRUD      | Эндпоинты                               | Что получаем                      | 
+| --------- |-------------                            | -------------                     |
+| 'GET'     | /api/v1/posts/                          | Список всех публикаций.           |
+| 'POST'    | /api/v1/posts/                          | Создание публикации.              |
+| 'GET'     | /api/v1/posts/{post_id}/                | Получение публикации.             |
+| 'PUT'     | /api/v1/posts/{post_id}/                | Обновление публикации.            |
+| 'PATCH'   | /api/v1/posts/{post_id}/                | Частичное обновление публикации.  |
+| 'DELETE'  | /api/v1/posts/{post_id}/                | Удаление публикации.              |
+| 'GET'     | /api/v1/posts/{post_id}/comments/       | Получение комментариев.           |
+| 'POST'    | /api/v1/posts/{post_id}/comments/       | Добавление комментарияв.          |
+| 'GET'     | /api/v1/posts/{post_id}/comments/{id}   | Получение комментария.            |
+| 'PUT'     | /api/v1/posts/{post_id}/comments/{id}   | Обновление комментария.           |
+| 'PATCH'   | /api/v1/posts/{post_id}/comments/{id}   | Частичное обновление комментария. |
+| 'DELETE'  | /api/v1/posts/{post_id}/comments/{id}   | Удаление комментария.             |
+| 'GET'     | /api/v1/groups/                         | Список групп.                     |
+| 'GET'     | /api/v1/groups/{id}                     | Информация о группе.              |
+| 'GET'     | /api/v1/follow/                         | Подписки.                         |
+| 'POST'    | /api/v1/groups/                         | Подписка.                         |
+| 'POST'    | /api/v1/jwt/create/                     | Получить JWT-токен.               |
+| 'POST'    | /api/v1/jwt/refresh/                    | Обновить JWT-токен.               |
+| 'POST'    | /api/v1/jwt/verify/                     | Проверить JWT-токен.              |
+ 
+
 
 paths:
   /api/v1/posts/:
