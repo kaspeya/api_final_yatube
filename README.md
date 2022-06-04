@@ -48,4 +48,4 @@ python3 manage.py runserver
 | 'POST'    | /api/v1/jwt/verify/                     | Проверить JWT-токен.              |
  
 
-# Документация в формате [ReDoc] (http://127.0.0.1:8000/redoc/).
+## Документация в формате [ReDoc](http://127.0.0.1:8000/redoc/).
