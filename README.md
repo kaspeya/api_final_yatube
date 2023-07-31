@@ -1,4 +1,4 @@
-## Документация к API проекта [Yatube](https://github.com/kaspeya/yamdb_final)
+## Документация к API проекта [Yatube](https://github.com/kaspeya/yatube_project)
 
 ### Как запустить проект:
 #### Клонировать репозиторий и перейти в него в командной строке:
